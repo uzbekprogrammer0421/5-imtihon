@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bilet Sotib Olish</title>
+    <link rel="stylesheet" href="stylebuy.css">
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+          <div class="image-text">
+            <span class="image">
+            </span>
+    
+            <div class="text logo-text">
+              <span class="name">Asilbek Abdullayev</span>
+              <span class="profession">Frontend Developer</span>
+            </div>
+          </div>
+    
+          <i class='bx bx-chevron-right toggle'></i>
+        </header>
+    
+        <div class="menu-bar">
+          <div class="menu">
+            <ul class="menu-links">
+              <li class="nav-link">
+                <a href="./index.html">
+                  <i class='bx bx-home-alt icon'></i>
+                  <span class="text nav-text">Tovarlar</span>
+                </a>
+              </li>
+              <li class="search-box">
+                <a href="./indexbuy.html">
+                  <i class='bx bx-search icon'></i>
+                  <span class="text nav-text">Bilet Izlash</span>
+                </a>
+              </li>
+              <div class="bottom-content">
+                <li class="">
+                  <a href="https://www.google.co.uz/">
+                    <i class='bx bx-log-out icon'></i>
+                    <span class="text nav-text">Chiqish</span>
+                  </a>
+                </li>
+    
+              </div>
+          </div>
+    
+      </nav>
+      <div class="row">
+          <h1>Bilet Sotib Olish Sahifasi</h1>
+          <form id="biletForm">
+              <label for="departure">Jo'nab ketish joyi:</label>
+              <input type="text" id="departure" name="departure" required><br><br>
+              <label for="destination">Yetib borish joyi:</label>
+              <input type="text" id="destination" name="destination" required><br><br>
+              <label for="date">Safar sanasi:</label>
+              <input type="date" id="date" name="date" required><br><br>
+              <button type="submit">Biletni Qidirish</button>
+          </form>
+      
+          <div id="biletInfo"></div>
+
+      </div>
+
+    <script src="./mainbuy.js"></script>
+</body>
+</html>
